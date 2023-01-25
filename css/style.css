@@ -2,5 +2,135 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    margin:3em;
+    
+}
+#logo {
+    height:19px;
+    width: 61.9px;
+    
+}
+
+#ulFooter{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    gap:4em;
+
+    position:absolute;
+    top:3em;
+    right:3em;
+}
+
+a {
+    text-decoration:none;
+    color:#000000;
+}
+
+#ulFooter a:hover  {
+    color:#0065FC;
+}
+
+ul {
+    list-style-type:none;
+}
+
+.allH2 {
+    font-weight:bold;
+}
+
+#searchIcon{
+    width: 50px;
+    height: 49px;
+    background-color:#F2F2F2;
+    border:solid #F2F2F2 1px;
+    border-radius:40px 0 0px 40px;
+    
+}
+
+.icon1 {
+    width: 14px;
+    height: 18px;
+}
+
+#search {
+    width:332;
+    height: 49px;
+    text-align:center;
+    font-weight:bold;
+    border:solid #F2F2F2 1px;
+    
+}
+
+#rechercherButton{
+    width: 132px;
+    height: 49px;
+    color:#FFFFFF;
+    background-color:#0065FC;
+    border:solid #0065FC 1px;
+    border-radius: 0px 40px 40px 0px;
+    font-weight:bold;
+    
+}
+
+.rechercher{
+    display:flex;
+}
+
+.h3 {
+    
+    font-weight:900;
+}
+
+.filterButton{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.filterButton ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap:3em;
+
+   
+}
+
+.filterButton button{
+    width: 226px;
+    height: 50px;
+    border: solid #F0F2F6 3px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.filterButton button:hover{
+    background-color: #DEEBFF;
+}
+
+.butt {
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.infoDiv{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap:0.5em;
+}
+
+#info{
+    width: 24px; 
+    height: 24px;
+    border:solid #D9D9D9 1px;
+    border-radius: 50px;
+    background-color:#FFFFFF;
 }
 

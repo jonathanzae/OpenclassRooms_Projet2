@@ -10,51 +10,121 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    
+    <link href="css/css/fontawesome.css" rel="stylesheet">
+    <link href="css/css/brands.css" rel="stylesheet">
+    <link href="css/css/solid.css" rel="stylesheet">
 
 </head>
 <body>
-    <div class="header">
-        <img id="logo" src="images/Booki.png" alt="logo Booki">
-        <a href="#">Hébergements</a>
-        <a href="#">Activités</a>
+
+  <header>
+
+   
+    <img id="logo" src="images/logo/Booki.png" alt="logo Booki">
+
+    <ul id="ulFooter">
+      <li><a href="#" >Hébergements</a></li>
+      <li><a href="#" >Activités</a></li>
+    </ul>
+   
+    
+  </header>
+
+  <nav>
+
+    <h2 class="allH2">Trouvez votre hébergement pour des vacances de rêve</h2>
+
+    <p>En plein centre-ville ou en pleine nature</p>
+
+    
+    <form methode="post" action="">
+      <div class="rechercher">    
+        <button type="button" id="searchIcon"><i class="fa-solid fa-location-dot fa-lg"></i></button>
+        <input type="search" id="search" name="search" value="Marseille, France">
+        <button type="submit" name="rechercherButton" id="rechercherButton" >Rechercher</button>
+      </div>
+    </form>
+    
+
+    <div class="filterButton">
+      
+      <h3 class="h3">Filtres</h3>
+
+      <ul>
+        <li><button type="submit" class="butt" ><i class="fa-solid fa-money-bill-wave fa-lg" style="color:#0065FC"></i> Économique</button></li>
+        <li><button type="submit" class="butt"><i class="fa-solid fa-person fa-lg" style="color:#0065FC"></i> Familial</button></li>
+        <li><button type="submit" class="butt" ><i class="fa-solid fa-heart fa-lg" style="color:#0065FC"></i> Romantique</button></li>
+        <li><button type="submit" class="butt" ><i class="fa-solid fa-dog fa-lg" style="color:#0065FC"></i> Animaux autorisés</button></li>
+      </ul>
+  
+    </div>
+    
+    
+    <div class="infoDiv">
+    <button type="button" id="info"><i class="fa-regular fa-info" style="color:#0065FC"></i></button>
+    <p id="p2">Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
+    
+
+  </nav>
+
+  <main>
+
+    <h2 class="allH2">Hébergements à Marseille</h2>
+
+  
+
+  <section>
+
+    <h2 class="allH2">Les plus populaires <i class="fa-solid fa-chart-line" style="color:#0065FC"></i></h2> 
+  </section>
+
+  <section>
+
+    <h2 class="allH2">Activités à Marseille</h2>
+
+</section>
+</main>
+  <footer>
+
+    <div class="1">
+
+      <h3 class="h3">À propos</h3>
+
+      <ul>
+        <li><a href="#">Fonctionnement du site</a></li>
+        <li><a href="#">Conditions générales</a></li>
+        <li><a href="#">Données et confidentialité</a></li>
+      </ul>
+
     </div>
 
-    <div class="recherches">
+    <div class="2">
 
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
-        <button>Rechercher</button>
-    </div>
+      <h3 class="h3">Nos hébergements</h3>
 
-    <div class="filtres">
-        <p>Filtres</p>
-
-        <button>Économique</button>
-        <button>Familial</button>
-        <button>Romantique</button>
-        <button>Animaux autorisés</button>
-
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      <ul>
+        <li><a href="#">Charte qualité</a></li>
+        <li><a href="#">Proposer votre hôtel</a></li>
+      </ul>
 
     </div>
 
-    <div class="hebergements">
-        <h2>Hébergements à Marseille</h2>
-    </div>
+    <div class="3">
 
-    <div class="populaires">
-        <h2>Les plus populaires</h2>
-    </div>
+      <h3 class="h3">Assistance</h3>
 
-    <div class="activités">
-        <h2>Activités à Marseille</h2>
-    </div>
-
-    <div class="footer">
+      <ul>
+        <li><a href="#">Centre d’aide</a></li>
+        <li><a href="#">Nous contacter</a></li>
+      </ul>
 
     </div>
 
+  </footer>
 
 </body>
 </html>
