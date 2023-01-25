@@ -3,21 +3,18 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin:3em;
-    
 }
+
 #logo {
     height:19px;
     width: 61.9px;
-    
 }
 
 #ulFooter{
-
     display:flex;
     flex-direction:row;
     justify-content:flex-end;
     gap:4em;
-
     position:absolute;
     top:3em;
     right:3em;
@@ -46,7 +43,6 @@ ul {
     background-color:#F2F2F2;
     border:solid #F2F2F2 1px;
     border-radius:40px 0 0px 40px;
-    
 }
 
 .icon1 {
@@ -71,7 +67,6 @@ ul {
     border:solid #0065FC 1px;
     border-radius: 0px 40px 40px 0px;
     font-weight:bold;
-    
 }
 
 .rechercher{
@@ -79,7 +74,6 @@ ul {
 }
 
 .h3 {
-    
     font-weight:900;
 }
 
@@ -95,8 +89,6 @@ ul {
     flex-direction:row;
     justify-content:flex-start;
     gap:3em;
-
-   
 }
 
 .filterButton button{
