@@ -10,7 +10,7 @@ body {
     width: 61.9px;
 }
 
-#ulFooter{
+#ulHeader{
     display:flex;
     flex-direction:row;
     justify-content:flex-end;
@@ -25,7 +25,11 @@ a {
     color:#000000;
 }
 
-#ulFooter a:hover  {
+#ulHeader a {
+    text-decoration: none;
+}
+
+#ulHeader a:hover  {
     color:#0065FC;
 }
 
