@@ -3,6 +3,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin:3em;
+    max-width:1340px;
 }
 
 #logo {
@@ -163,26 +164,37 @@ ul {
     height: 100px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    border:solid #FFFFFF 5px;
 }
 
 .container{
     text-align:center;
 }
 
-.more{}
-
-.popularH2{
-    display:flex;
-    flex-direction:row;
+.more{
 
 }
 
+.popularH2 h2{
+    display:flex;
+    flex-direction:row;
+    gap:40px;
+}
+
+
+#logoPopular{
+    float:right;
+}
+
 .img2{
-    width: 50%;
-    height: 25%;
     border:solid #FFFFFF 5px;
     border-top-left-radius: 20px;
     border-bottom-left-radius:20px;
+    display:flex;
+    float:left;
+    object-fit:revert;
+    width:50%;
+    height:100%;
 }
 
 .card2 {
@@ -199,12 +211,16 @@ ul {
 }
 
 .container2 {
-    text-align:right;
+    display:block;
+    text-align:center;
 }
 
 .cardsPopular{
     display:flex;
     flex-direction:column;
+    width:100%;
+    height:33%;
+    gap:20px;
 }
 
 .sections{
@@ -215,6 +231,8 @@ ul {
 }
 
 .activities{
+    width:100%;
+    max-width:1340px;
 }
 
 .cardsActivities{
@@ -235,7 +253,7 @@ ul {
     border-top-right-radius:20px;
     object-fit: cover;
     width: 100%;
-    height:100px;
+    height: 70%;
 }
 
 .container3 {
@@ -245,6 +263,8 @@ ul {
 
 .footer{
     background-color: #F2F2F2;
+    max-width:1340px;
+    width:100%;
 }
 
 .boxFlex{
