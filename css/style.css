@@ -146,25 +146,9 @@ ul {
 }
 
 .fa-star {
-    cursor:pointer;
-    color:#F2F2F2;
+    color:#0065FC;
     padding:0.2px;
-    
 }
-
-.fiveStars {
-	display: flex;
-}
-
-.stars:hover .fa-star {
-    color: #0065FC;
-    translate: 0.5s;
-}
-
-.stars .fa-star:hover ~ .fa-star {
-    color: #F2F2F2;
-}
-
 
 .hostingH2{
     display:flex;
@@ -249,13 +233,7 @@ ul {
 }
 
 .container2 {
-    text-align:center;
-    padding:5px;
-}
-
-.container2 h4 p{
-    margin: 0px;
-    padding: 0px;
+    text-align:center;;
 }
 
 .cardsPopular{
