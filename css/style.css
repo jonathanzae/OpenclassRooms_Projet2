@@ -2,9 +2,10 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin:3em;
     margin-bottom: 0;
-    max-width:1400px;
+    max-width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header{
@@ -14,20 +15,25 @@ body {
 
 }
 #logo {
-    height:19px;
+    height: 19px;
     width: 61.9px;
 }
 
 #ulHeader nav{
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
-    gap:4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 4em;
+}
+
+#borderTop{
+    border-top: solid #0065FC 2px;
+    padding-top: 20px;
 }
 
 a {
-    text-decoration:none;
-    color:#000000;
+    text-decoration: none;
+    color: #000000;
 }
 
 #ulHeader a {
@@ -51,7 +57,8 @@ ul {
     height: 49px;
     background-color:#F2F2F2;
     border:solid #F2F2F2 1px;
-    border-radius:40px 0 0px 40px;
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
 }
 
 .icon1 {
@@ -74,7 +81,8 @@ ul {
     color:#FFFFFF;
     background-color:#0065FC;
     border:solid #0065FC 1px;
-    border-radius: 0px 40px 40px 0px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius: 15px;
     font-weight:bold;
 }
 
@@ -101,7 +109,7 @@ ul {
 }
 
 .filterButton button{
-    width: 226px;
+    
     height: 50px;
     border: solid #F0F2F6 3px;
     border-radius: 25px;
@@ -139,7 +147,7 @@ ul {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding:20px;
-    width:75%;
+    width:70%;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -158,25 +166,23 @@ ul {
 .cardsHosting{
     display:flex;
     flex-wrap: wrap;
-    gap:31px;
+    row-gap:20px;
 }
 
 .card1 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
-    width: 25%;
     background-color: #FFFFFF;
-    margin: auto;
-    
+    overflow: auto;
+    width: calc((100% -40px) /3);
+    margin: 20px;
+    border: solid #ffff 5px;
 }
 
 .img1{
     object-fit: cover;
-    width: 95%;
+    width: 100%;
     height: 100px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border:solid #FFFFFF 5px;
 }
 
 .container{
@@ -194,16 +200,12 @@ ul {
     gap:90px
 }
 
-.h2Test {
-}
-
 #iconPopular{
     display: inline-flex;
     align-items: center;
 }
 
 .img2{
-    border:solid #FFFFFF 5px;
     border-top-left-radius: 20px;
     border-bottom-left-radius:20px;
     display:flex;
@@ -219,6 +221,8 @@ ul {
     background-color: #FFFFFF;
     width:100%;
     height:100%;
+    border:solid #FFFFFF 5px;
+    box-sizing: content-box;
 }
 
 .hosting2{
@@ -233,7 +237,7 @@ ul {
 }
 
 .container2 {
-    text-align:center;;
+    text-align:center;
 }
 
 .cardsPopular{
@@ -248,7 +252,7 @@ ul {
     display: flex;
     flex-direction: row;
     gap:40px;
-    max-width: 1340px;
+    max-width: 1400px;
 }
 
 .activities{
@@ -266,7 +270,7 @@ ul {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
     background-color: #FFFFFF;
-    width:25%;
+    width: calc(100% /4);
 }
 
 .img3{
@@ -274,16 +278,16 @@ ul {
     border-top-right-radius:20px;
     object-fit: cover;
     width: 100%;
-    height: 87%;
+    height: 350px;
 }
 
 .container3 {
     text-align:left;
-    margin-left: 10px;
+    padding: 10px;
 }
 
 .container3 h4{
-
+    margin:0;
 }
 
 .footer{
@@ -298,7 +302,7 @@ ul {
 }
 
 .div{
-    width:33%;
+    width: calc(100% /3);
     margin: 50px;
 }
 
