@@ -167,13 +167,14 @@ ul {
     display:flex;
     flex-wrap: wrap;
     row-gap:20px;
+    box-sizing: border-box;
 }
 
 .card1 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
     background-color: #FFFFFF;
-    overflow: auto;
+    overflow: hidden;
     width: calc((100% -40px) /3);
     margin: 20px;
     border: solid #ffff 5px;
