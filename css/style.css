@@ -27,12 +27,10 @@ body {
 }
 #borderHosting{
     width: 162px;
+    text-align: center;
     border-top: solid #0065FC 2px;
 }
 
-#borderHosting:hover {
-    
-}
 
 a {
     text-decoration: none;
@@ -200,9 +198,16 @@ ul {
 .container{
     text-align: left;
     padding: 10px;
-    padding-top: 0;
+    margin-top: 0;
 }
 
+.h4Cards{
+    margin: 5px;
+}
+
+.container p{
+    margin: 5px;
+}
 
 .popularH2 {
     display:flex;
@@ -214,13 +219,12 @@ ul {
     align-items: center;
 }
 
+
 .img2{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius:20px;
-    float:left;
-    object-fit:cover;
-    width:50%;
-    height:140px;
+    float: left;
+    object-fit: cover;
+    width: 50%;
+    height: 140px;
 }
 
 .card2 {
@@ -228,6 +232,7 @@ ul {
     border-radius: 20px;
     background-color: #FFFFFF;
     border:solid #FFFFFF 5px;
+    overflow: hidden;
 }
 
 .hosting2{
@@ -245,10 +250,17 @@ ul {
     text-align:center;
 }
 
-.container2 h4 p{
-    margin-bottom: 0;
+.container2 h4{
+    margin: 5px;
 }
 
+.container2 p{
+    margin: 5px;
+}
+
+.container2 .fiveStars{
+    
+}
 .cardsPopular{
     display:flex;
     flex-direction:column;
