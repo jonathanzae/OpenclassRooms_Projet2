@@ -1,36 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 0;
     max-width: 1400px;
     padding-left: 20px;
     padding-right: 20px;
+    margin:0;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
 #logo {
     height: 19px;
     width: 61.9px;
 }
 
-.ulHeader{
+.ulHeader {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 4em;
-}
-#borderHosting{
-    width: 162px;
-    text-align: center;
-    border-top: solid #0065FC 2px;
+    margin: 0;
+    padding: 0;
 }
 
+.ulHeader li {
+    padding: 20px;
+    border-top: solid #FFFFFF 3px;
+}
+
+.ulHeader li:hover {
+    border-top: solid #0065FC 3px;
+}
+
+#borderHosting {
+    width: 162px;
+    border-top: solid #0065FC 2px;
+    position: absolute;
+    top: 0;
+    right: 130px;
+}
+
+#aBorder {
+    position:relative;
+}
 
 a {
     text-decoration: none;
@@ -41,7 +62,7 @@ a {
     text-decoration: none;
 }
 
-.ulHeader a:hover  {
+.ulHeader a:hover {
     color:#0065FC;
 }
 
@@ -53,7 +74,7 @@ ul {
     font-weight:bold;
 }
 
-#searchIcon{
+#searchIcon {
     width: 50px;
     height: 49px;
     background-color:#F2F2F2;
@@ -74,7 +95,7 @@ ul {
     padding-left: 10px;
 }
 
-#rechercherButton{
+#rechercherButton {
     width: 132px;
     height: 49px;
     color:#FFFFFF;
@@ -85,7 +106,7 @@ ul {
     font-weight:bold;
 }
 
-.rechercher{
+.rechercher {
     display:flex;
 }
 
@@ -93,7 +114,7 @@ ul {
     font-weight:900;
 }
 
-.filterButton{
+.filterButton {
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -101,21 +122,21 @@ ul {
     margin-top: 40px;
 }
 
-.filterButton ul{
+.filterButton ul {
     display:flex;
     flex-direction:row;
     justify-content:flex-start;
     gap:3em;
 }
 
-.filterButton button{
+.filterButton button {
     height: 50px;
     border: solid #F0F2F6 3px;
     border-radius: 25px;
     background-color: white;
 }
 
-.filterButton button:hover{
+.filterButton button:hover {
     background-color: #DEEBFF;
 }
 
@@ -125,18 +146,17 @@ ul {
     text-align: center;
 }
 
-.butt i{
+.butt i {
     padding: 10px;
 }
 
-.butt span{
+.butt span {
     text-align: center;
     padding: 10px;
     padding-left: 0;
 }
 
-
-.infoDiv{
+.infoDiv {
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -144,7 +164,7 @@ ul {
     gap:0.5em;
 }
 
-#info{
+#info {
     width: 24px; 
     height: 24px;
     border:solid #D9D9D9 1px;
@@ -152,7 +172,7 @@ ul {
     background-color:#FFFFFF;
 }
 
-.hosting1{
+.hosting1 {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding:20px;
@@ -167,12 +187,12 @@ ul {
     padding:0.2px;
 }
 
-.hostingH2{
+.hostingH2 {
     display:flex;
     justify-content: flex-start;
 }
 
-.cardsHosting{
+.cardsHosting {
     display:flex;
     flex-wrap: wrap;
     row-gap:40px;
@@ -189,42 +209,46 @@ ul {
     box-sizing: border-box;
 }
 
-.img1{
+.img1 {
     object-fit: cover;
     width: 100%;
     height: 100px;
 }
 
-.container{
+.container {
     text-align: left;
     padding: 10px;
     margin-top: 0;
 }
 
-.h4Cards{
+.h4Cards {
     margin: 5px;
 }
 
-.container p{
+.container p {
     margin: 5px;
 }
 
-.popularH2 {
+.popularH2 { 
     display:flex;
-    gap:90px
+    gap:70px
 }
 
-#iconPopular{
+.popularH2 h2 {
+    padding: 0;
+}
+
+#iconPopular {
     display: inline-flex;
     align-items: center;
 }
 
 
-.img2{
-    float: left;
+.img2 {
     object-fit: cover;
     width: 50%;
     height: 140px;
+    padding-right: 15px;
 }
 
 .card2 {
@@ -235,7 +259,11 @@ ul {
     overflow: hidden;
 }
 
-.hosting2{
+.card2 a {
+    display:flex;
+}
+
+.hosting2 {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding:40px;
@@ -247,27 +275,34 @@ ul {
 }
 
 .container2 {
-    text-align:center;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.container2 h4{
-    margin: 5px;
+.container2 h4 {
+    margin: 0px;
+    padding-top: 15px;
 }
 
-.container2 p{
-    margin: 5px;
+.container2 p {
+    margin: 0px;
+    padding-top: 15px;
 }
 
-.container2 .fiveStars{
-    
+.container2 .fiveStars {
+    display: flex;
+    align-content: space-between;
 }
-.cardsPopular{
+
+.cardsPopular {
     display:flex;
     flex-direction:column;
     gap:40px;
 }
 
-.sections{
+.sections {
     display: flex;
     flex-direction: row;
     gap:40px;
@@ -276,28 +311,27 @@ ul {
     margin-bottom: 40px;
 }
 
-.activities{
+.activities {
     width:100%;
     max-width:1400px;
     margin-bottom: 40px;
 }
 
-.cardsActivities{
+.cardsActivities {
     display: flex;
     flex-direction: row;
     gap: 40px;
 }
 
-.card3{
+.card3 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
     background-color: #FFFFFF;
     width: calc(100% /4);
+    overflow: hidden;
 }
 
-.img3{
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px;
+.img3 {
     object-fit: cover;
     width: 100%;
     height: 350px;
@@ -308,32 +342,40 @@ ul {
     padding: 10px;
 }
 
-.container3 h4{
+.container3 h4 {
     margin:0;
 }
 
-.footer{
+.footer {
     background-color: #F2F2F2;
     max-width:1400px;
-    
 }
 
-.boxFlex{
+.boxFlex {
     display: flex;
     gap:20px;
 }
 
-.div{
+.div {
     width: calc(100% /3);
     margin: 50px;
 }
 
-.h3{
+.h3 {
    text-align:left;
 }
 
-.ulFooter{
+.ulFooter {
    text-align:left;
    padding-left: 0;
 }
 
+@media screen and (max-width:768px){
+    .sections {
+        flex-direction: column-reverse;
+    }
+
+    .hosting2, .hosting1{
+        width:100%;
+    }
+}
