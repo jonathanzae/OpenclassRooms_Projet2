@@ -371,11 +371,75 @@ ul {
 }
 
 @media screen and (max-width:768px){
+
+    body {
+        padding:0;
+    }
+
+    .header {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .ulHeader {
+
+    }
+
+    .ulHeader li {
+        padding:40px;
+        border-bottom: solid #D9D9D9 3px;
+        border-top: none;
+    }
+
+    .ulHeader li:hover {
+        border-bottom: solid #0065FC 3px;
+        border-top: none;
+    }
+
+    .section1 {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .filterButton ul{
+        width: calc(100% /2);
+    }
+
     .sections {
         flex-direction: column-reverse;
     }
 
     .hosting2, .hosting1{
         width:100%;
+    }
+
+    .hosting1 {
+        background-color: #FFFFFF;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .card1 {
+        width:100%;
+    }
+
+    .activities {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cardsActivities {
+        flex-direction: column;
+        
+    }
+
+    .card3 {
+        width: 100%;
+    }
+
+    .boxFlex {
+        flex-direction: column;
     }
 }
