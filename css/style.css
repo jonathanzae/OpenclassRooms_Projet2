@@ -377,7 +377,7 @@ ul {
     }
 
     .header {
-        margin-top: 15px;
+        margin-top: 20px;
         flex-direction: column;
     }
 
@@ -400,9 +400,17 @@ ul {
         padding-right: 20px;
         padding-left: 20px;
     }
+    
+    .h3 {
+        
+    }
 
-    .filterButton ul{
+    .filterButton {
         width: calc(100% /2);
+    }
+
+    .filterButton ul {
+
     }
 
     .sections {
@@ -411,6 +419,7 @@ ul {
 
     .hosting2, .hosting1{
         width:100%;
+        border-radius: 0;
     }
 
     .hosting1 {
@@ -434,12 +443,28 @@ ul {
         flex-direction: column;
         
     }
+    
+    .activitiesH2 {
+        width: 50%;
+    }
 
     .card3 {
         width: 100%;
     }
 
+    .img3 {
+        height: 150px;
+    }
+
     .boxFlex {
         flex-direction: column;
+    }
+
+    .div {
+        margin: 10px;
+    }
+
+    .ulFooter {
+        width:200%;
     }
 }
