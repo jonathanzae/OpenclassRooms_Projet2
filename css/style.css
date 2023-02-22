@@ -126,7 +126,7 @@ ul {
     display:flex;
     flex-direction:row;
     justify-content:flex-start;
-    gap:3em;
+    gap: 30px;
 }
 
 .filterButton button {
@@ -161,7 +161,7 @@ ul {
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
-    gap:0.5em;
+    gap: 10px;
 }
 
 #info {
