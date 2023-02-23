@@ -88,14 +88,14 @@ ul {
     height: 18px;
 }
 
-#search {
+#searchInput {
     height: 49px;
     font-weight:bold;
     border:solid #F2F2F2 1px;
     padding-left: 10px;
 }
 
-#rechercherButton {
+#searchButton {
     width: 132px;
     height: 49px;
     color:#FFFFFF;
@@ -106,12 +106,18 @@ ul {
     font-weight:bold;
 }
 
-.rechercher {
+i.fa-solid.fa-magnifying-glass {
+    padding: 10px;
+    display: none;
+}
+
+.search {
     display:flex;
 }
 
 .h3 {
     font-weight:900;
+    margin: 0;
 }
 
 .filterButton {
@@ -399,6 +405,24 @@ ul {
         padding-left: 20px;
     }
 
+    .search {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    #searchButton {
+        width: auto;
+        height: auto;
+    }
+
+    i.fa-solid.fa-magnifying-glass {
+        display: initial;
+    }
+
+    #searchButton span {
+        display: none;
+    }
+
     .filterButton {
         flex-direction: column;
     }
@@ -420,6 +444,7 @@ ul {
 
     .filterButton button {
         width: 100%;
+        margin: 10px;
     }
 
     .sections {
@@ -436,7 +461,7 @@ ul {
     }
 
     .more {
-        display: none;
+        visibility: collapse;
     }
 
     .card1 {
@@ -446,6 +471,7 @@ ul {
     .activities {
         padding-left: 20px;
         padding-right: 20px;
+        margin-bottom: 80px;
     }
 
     .cardsActivities {
@@ -465,8 +491,14 @@ ul {
         height: 150px;
     }
 
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
     .boxFlex {
         flex-direction: column;
+        gap: 0;
     }
 
     .div {
@@ -475,6 +507,7 @@ ul {
 
     .ulFooter {
         width:200%;
+        margin-bottom: 0;
     }
 
     .h3Footer {
