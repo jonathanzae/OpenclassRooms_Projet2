@@ -9,7 +9,7 @@ body {
     max-width: 1400px;
     padding-left: 20px;
     padding-right: 20px;
-    margin:0;
+    margin: auto;
 }
 
 .header {
@@ -124,7 +124,7 @@ i.fa-solid.fa-magnifying-glass {
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
     margin-top: 40px;
 }
 
@@ -132,7 +132,7 @@ i.fa-solid.fa-magnifying-glass {
     display:flex;
     flex-direction:row;
     justify-content:flex-start;
-    gap: 30px;
+    gap: 20px;
 }
 
 .filterButton button {
@@ -154,12 +154,6 @@ i.fa-solid.fa-magnifying-glass {
 
 .butt i {
     padding: 10px;
-}
-
-.butt span {
-    text-align: center;
-    padding: 10px;
-    padding-left: 0;
 }
 
 .infoDiv {
@@ -237,7 +231,7 @@ i.fa-solid.fa-magnifying-glass {
 
 .popularH2 { 
     display: flex;
-    gap: 100px
+    justify-content: space-between;
 }
 
 .popularH2 h2 {
@@ -289,12 +283,12 @@ i.fa-solid.fa-magnifying-glass {
 
 .container2 h4 {
     margin: 0px;
-    padding-top: 15px;
+    padding-top: 0px;
 }
 
 .container2 p {
     margin: 0px;
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 .container2 .fiveStars {
@@ -354,7 +348,7 @@ i.fa-solid.fa-magnifying-glass {
 
 .footer {
     background-color: #F2F2F2;
-    max-width:1400px;
+    
 }
 
 .boxFlex {
@@ -376,10 +370,19 @@ i.fa-solid.fa-magnifying-glass {
    padding-left: 0;
 }
 
+
+
+
 @media screen and (max-width:768px){
 
     body {
         padding:0;
+        max-width: 768px;
+    }
+
+    .navHeader {
+        width: 100%;
+        margin-top: 25px;
     }
 
     .header {
@@ -391,8 +394,8 @@ i.fa-solid.fa-magnifying-glass {
         padding: 20px;
         border-bottom: solid #D9D9D9 3px;
         border-top: none;
-        padding-left: 70px;
-        padding-right: 70px;
+        width: 50%;
+        text-align: center;
     }
 
     .ulHeader li:hover {
@@ -408,6 +411,10 @@ i.fa-solid.fa-magnifying-glass {
     .search {
         justify-content: center;
         margin-top: 40px;
+    }
+
+    #searchInput {
+        flex: 1;
     }
 
     #searchButton {
@@ -431,8 +438,8 @@ i.fa-solid.fa-magnifying-glass {
         gap: 0;
         padding-left: 0;
         flex-wrap: wrap;
-
-
+        justify-content: space-between;
+        row-gap: 15px;
     }
 
     .filterButton li {
@@ -444,7 +451,9 @@ i.fa-solid.fa-magnifying-glass {
 
     .filterButton button {
         width: 100%;
-        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     .sections {
@@ -460,11 +469,19 @@ i.fa-solid.fa-magnifying-glass {
         background-color: #FFFFFF;
     }
 
+    .cardsPopular {
+        flex-direction: column;
+    }
+
     .more {
-        visibility: collapse;
+        display: none;
     }
 
     .card1 {
+        width:100%;
+    }
+
+    .card2 {
         width:100%;
     }
 
@@ -476,11 +493,6 @@ i.fa-solid.fa-magnifying-glass {
 
     .cardsActivities {
         flex-direction: column;
-        
-    }
-    
-    .activitiesH2 {
-        width: 50%;
     }
 
     .card3 {
@@ -511,6 +523,57 @@ i.fa-solid.fa-magnifying-glass {
     }
 
     .h3Footer {
+        width: 200%;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+
+    body {
+        padding-right: 40px;
+        padding-left: 40px;
+        max-width: 992px;
+    }
+    
+    .filterButton ul {
+        padding-left: 10px;
+    }
+
+    .butt {
+        display: flex;
+        align-items: center;
+    }
+
+    .sections {
+        flex-direction: column;
+    }
+
+    .hosting1 {
+        width: 100%;
+    }
+
+    .hosting2 {
+        width: 100%;
+    }
+
+    .cardsPopular {
+        flex-direction: row;
+    }
+
+    .card2 {
+        width: calc(100% /3);
+    }
+
+    .img3 {
+        height: 150px;
+    }
+
+    .h3Footer {
+        width: 200%;
+    }
+
+    .ulFooter {
         width: 200%;
     }
 }
