@@ -370,14 +370,72 @@ i.fa-solid.fa-magnifying-glass {
    padding-left: 0;
 }
 
+@media screen and (max-width:992px) {
 
+    body {
+        padding-right: 40px;
+        padding-left: 40px;
+        margin: auto;
+
+    }
+    
+    .filterButton ul {
+        padding-left: 10px;
+    }
+
+    .butt {
+        display: flex;
+        align-items: center;
+    }
+
+    .sections {
+        flex-direction: column;
+    }
+
+    .hosting1 {
+        width: 100%;
+    }
+
+    .hosting2 {
+        width: 100%;
+    }
+
+    .cardsPopular {
+        flex-direction: row;
+        gap:0;
+        justify-content: space-between;
+    }
+
+    .card2 {
+        width: calc((100% - 30px) /3);
+    }
+
+    .stars {
+        display: flex;
+    }
+
+    .img3 {
+        height: 150px;
+    }
+
+    .footer {
+        
+    }
+
+    .h3Footer {
+        width: 200%;
+    }
+
+    .ulFooter {
+        width: 200%;
+    }
+}
 
 
 @media screen and (max-width:768px){
 
     body {
         padding:0;
-        max-width: 768px;
     }
 
     .navHeader {
@@ -446,7 +504,7 @@ i.fa-solid.fa-magnifying-glass {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: calc(100% /2);
+        width: calc((100% - 10px) /2);
     }
 
     .filterButton button {
@@ -471,6 +529,7 @@ i.fa-solid.fa-magnifying-glass {
 
     .cardsPopular {
         flex-direction: column;
+        gap: 40px;
     }
 
     .more {
@@ -528,52 +587,3 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 
-@media screen and (max-width:992px) {
-
-    body {
-        padding-right: 40px;
-        padding-left: 40px;
-        max-width: 992px;
-    }
-    
-    .filterButton ul {
-        padding-left: 10px;
-    }
-
-    .butt {
-        display: flex;
-        align-items: center;
-    }
-
-    .sections {
-        flex-direction: column;
-    }
-
-    .hosting1 {
-        width: 100%;
-    }
-
-    .hosting2 {
-        width: 100%;
-    }
-
-    .cardsPopular {
-        flex-direction: row;
-    }
-
-    .card2 {
-        width: calc(100% /3);
-    }
-
-    .img3 {
-        height: 150px;
-    }
-
-    .h3Footer {
-        width: 200%;
-    }
-
-    .ulFooter {
-        width: 200%;
-    }
-}
