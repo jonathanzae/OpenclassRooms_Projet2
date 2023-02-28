@@ -120,12 +120,17 @@ i.fa-solid.fa-magnifying-glass {
     margin: 0;
 }
 
+.filters {
+    display: flex;
+    align-items: baseline;
+    margin-top: 40px;
+}
+
 .filterButton {
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 40px;
 }
 
 .filterButton ul {
@@ -197,6 +202,12 @@ i.fa-solid.fa-magnifying-glass {
     flex-wrap: wrap;
     row-gap:40px;
     justify-content: space-between;
+}
+
+.more{
+    margin:0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .card1 {
@@ -370,6 +381,10 @@ i.fa-solid.fa-magnifying-glass {
    padding-left: 0;
 }
 
+.ulFooter li {
+    padding: 5px;
+}
+
 @media screen and (max-width:992px) {
 
     body {
@@ -419,15 +434,12 @@ i.fa-solid.fa-magnifying-glass {
     }
 
     .footer {
-        
+        padding: 30px;
     }
 
-    .h3Footer {
-        width: 200%;
-    }
-
-    .ulFooter {
-        width: 200%;
+    .div {
+        width: calc((100% - 40px) /3);
+        margin: 0;
     }
 }
 
@@ -486,6 +498,10 @@ i.fa-solid.fa-magnifying-glass {
 
     #searchButton span {
         display: none;
+    }
+
+    .filters {
+        flex-wrap: wrap;
     }
 
     .filterButton {
@@ -574,16 +590,14 @@ i.fa-solid.fa-magnifying-glass {
 
     .div {
         margin: 10px;
+        width: 100%
     }
 
     .ulFooter {
-        width:200%;
         margin-bottom: 0;
     }
 
-    .h3Footer {
-        width: 200%;
-    }
+
 }
 
 
