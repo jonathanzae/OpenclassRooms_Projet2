@@ -421,6 +421,14 @@ i.fa-solid.fa-magnifying-glass {
         justify-content: space-between;
     }
 
+    .title {
+        font-size: 14px;
+    }
+
+    .fiveStars {
+        font-size: 14px;
+    }
+
     .card2 {
         width: calc((100% - 30px) /3);
     }
@@ -528,6 +536,10 @@ i.fa-solid.fa-magnifying-glass {
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+
+    .filterButton span {
+        font-size: 12px;
     }
 
     .sections {
