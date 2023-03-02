@@ -228,7 +228,7 @@ i.fa-solid.fa-magnifying-glass {
 
 .container {
     text-align: left;
-    padding: 10px;
+    padding: 5px;
     margin-top: 0;
 }
 
@@ -294,7 +294,7 @@ i.fa-solid.fa-magnifying-glass {
 
 .container2 h4 {
     margin: 0px;
-    padding-top: 0px;
+    padding: 0px;
 }
 
 .container2 p {
@@ -565,11 +565,19 @@ i.fa-solid.fa-magnifying-glass {
     }
 
     .card1 {
-        width:100%;
+        width: 100%;
     }
 
     .card2 {
-        width:100%;
+        width: 100%;
+    }
+
+    .container2 h4 {
+        padding: 5px;
+    }
+
+    .container2 p {
+        padding: 5px;
     }
 
     .activities {
