@@ -154,6 +154,7 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 .butt i {
+    color:#0065FC;
     padding: 10px;
 }
 
@@ -171,6 +172,10 @@ i.fa-solid.fa-magnifying-glass {
     border:solid #D9D9D9 1px;
     border-radius: 50px;
     background-color:#FFFFFF;
+}
+
+#info i {
+    color:#0065FC;
 }
 
 .hosting1 {
@@ -228,6 +233,10 @@ i.fa-solid.fa-magnifying-glass {
     margin-top: 0;
 }
 
+i.fa-solid.fa-star:last-child {
+    color: #F2F2F2;
+}
+
 .h4Cards {
     margin: 5px;
 }
@@ -246,6 +255,7 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 #iconPopular {
+    color: #0065FC;
     display: inline-flex;
     align-items: center;
 }
